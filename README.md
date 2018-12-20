@@ -1,2 +1,2 @@
 # docker-sogo
-Latest SOGo with ssmtp
+Latest SOGo (from cschweingruber/sogo) with ssmtp
