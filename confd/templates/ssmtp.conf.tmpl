@@ -6,7 +6,7 @@ root={{ getenv "SSMTP_root" }}
 mailhub={{ getenv "SSMTP_mailhub" }}
 
 # The address where the mail appears to come from for user authentication.
-rewriteDomain={{ getenv "rewriteDomain" }}
+rewriteDomain={{ getenv "SSMTP_rewriteDomain" }}
 
 # The full hostname.  Must be correctly formed, fully qualified domain name or GMail will reject connection.
 hostname={{ getenv "SSMTP_hostname" }}
