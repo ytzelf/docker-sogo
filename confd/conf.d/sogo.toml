@@ -11,6 +11,7 @@ keys = [
     "SOGoMailingMechanism",
     "SOGoForceExternalLoginWithEmail",
     "SOGoUserSourcesMySql",
+    "SOGoPageTitle",
     "SOGoLanguage",
     "SOGoTimeZone",
     "SOGoSuperUsernames",
