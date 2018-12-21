@@ -10,3 +10,4 @@ RUN apt-get update \
 # Install CONFD
 ADD https://github.com/kelseyhightower/confd/releases/download/v${CONFD_VERSION}/confd-${CONFD_VERSION}-linux-amd64 /usr/local/bin/confd
 RUN chmod +x /usr/local/bin/confd
+ADD confd /etc/confd
