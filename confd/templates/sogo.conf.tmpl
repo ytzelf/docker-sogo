@@ -1,0 +1,64 @@
+{
+
+  /* Database configuration (mysql:// or postgresql://) */
+  SOGoProfileURL = "{{ getenv "SOGoProfileURL" }}";
+  OCSFolderInfoURL = "{{ getenv "OCSFolderInfoURL" }}";
+  OCSSessionsFolderURL = "{{ getenv "OCSSessionsFolderURL" }}";
+  
+  /* Mail */
+  SOGoIMAPServer = "{{ getenv "SOGoIMAPServer" }}";
+  SOGoSieveServer = "{{ getenv "SOGoSieveServer" }}";
+  SOGoSieveScriptsEnabled = "{{ getenv "SOGoSieveServer" }}";
+  SOGoMailingMechanism = "{{ getenv "SOGoMailingMechanism" }}";
+  SOGoForceExternalLoginWithEmail = "{{ getenv "SOGoForceExternalLoginWithEmail" }}";
+
+  /* Notifications */
+  //SOGoAppointmentSendEMailNotifications = NO;
+  //SOGoACLsSendEMailNotifications = NO;
+  //SOGoFoldersSendEMailNotifications = NO;
+
+  /* Authentication */
+  //SOGoPasswordChangeEnabled = YES;
+
+  /* SQL authentication */
+  SOGoUserSources = ( {
+    type = sql;
+    id = directory;
+    viewURL = "{{ getenv "SOGoUserSourcesMySql" }}"
+    canAuthenticate = YES;
+    isAddressBook = NO;
+    userPasswordAlgorithm = md5;
+  } );
+
+  /* Web Interface */
+  SOGoPageTitle = "{{ getenv "SOGoPageTitle" }}";
+  SOGoVacationEnabled = YES;
+  SOGoForwardEnabled = YES;
+  SOGoMailAuxiliaryUserAccountsEnabled = YES;
+  SOGoTrustProxyAuthentication = NO;
+
+  /* General - SOGoTimeZone *MUST* be defined */
+  SOGoLanguage = "{{ getenv "SOGoLanguage" }}";
+  SOGoTimeZone = "{{ getenv "SOGoTimeZone" }}";
+  SOGoSuperUsernames = "{{ getenv "SOGoSuperUsernames" }}";
+  SxVMemLimit = "{{ getenv "SxVMemLimit" }}";
+  WOPidFile = "/var/run/sogo/sogo.pid";
+  WOWorkersCount = "{{ getenv "WOWorkersCount" }}";
+  SOGoMaximumPingInterval = "{{ getenv "SOGoMaximumPingInterval" }}";
+  SOGoMaximumSyncInterval = "{{ getenv "SOGoMaximumSyncInterval" }}";
+  SOGoInternalSyncInterval = "{{ getenv "SOGoInternalSyncInterval" }}";
+  SOGoXSRFValidationEnabled = YES;
+  SOGoMemcachedHost = "{{ getenv "SOGoMemcachedHost" }}";
+
+  /* Debug */
+  //SOGoDebugRequests = YES;
+  //SoDebugBaseURL = YES;
+  //ImapDebugEnabled = YES;
+  //LDAPDebugEnabled = YES;
+  //PGDebugEnabled = YES;
+  //MySQL4DebugEnabled = YES;
+  //SOGoUIxDebugEnabled = YES;
+  //WODontZipResponse = YES;
+  //WOLogFile = /var/log/sogo/sogo.log;
+
+}
