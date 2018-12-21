@@ -1,0 +1,16 @@
+[template]
+src = "sogo.conf.tmpl"
+dest = "/etc/sogo/sogo.conf"
+keys = [
+    "SOGoProfileURL",
+    "OCSFolderInfoURL",
+    "OCSSessionsFolderURL",
+    "LDAP",
+    "LDAP_baseDN",
+    "LDAP_bindDN",
+    "LDAP_bindPassword",
+    "LDAP_hostname",
+    "MAIL_SOGoIMAPServer",
+    "MAIL_SOGoSMTPServer",
+    "MAIL_SOGoMailDomain",
+]
