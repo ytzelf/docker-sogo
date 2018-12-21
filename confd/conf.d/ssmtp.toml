@@ -2,8 +2,7 @@
 [template]
 src = "ssmtp.conf.tmpl"
 dest = "/etc/ssmtp/ssmtp.conf"
-uid = 999
-gid = 999
+gid = 8
 keys = [
     "SSMTP_root",
     "SSMTP_mailhub",
