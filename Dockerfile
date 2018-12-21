@@ -11,3 +11,5 @@ RUN apt-get update \
 ADD https://github.com/kelseyhightower/confd/releases/download/v${CONFD_VERSION}/confd-${CONFD_VERSION}-linux-amd64 /usr/local/bin/confd
 RUN chmod +x /usr/local/bin/confd
 ADD confd /etc/confd
+ADD confd.sh /etc/my_init.d/
+RUN chmod +x /etc/my_init.d/confd.sh
