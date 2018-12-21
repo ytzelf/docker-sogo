@@ -40,7 +40,7 @@
   /* General - SOGoTimeZone *MUST* be defined */
   SOGoLanguage = "{{ getenv "SOGoLanguage" }}";
   SOGoTimeZone = "{{ getenv "SOGoTimeZone" }}";
-  SOGoSuperUsernames = "{{ getenv "SOGoSuperUsernames" }}";
+  SOGoSuperUsernames = {{ getenv "SOGoSuperUsernames" }};
   SxVMemLimit = "{{ getenv "SxVMemLimit" }}";
   WOPidFile = "/var/run/sogo/sogo.pid";
   WOWorkersCount = "{{ getenv "WOWorkersCount" }}";
