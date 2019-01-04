@@ -4,7 +4,7 @@ ENV CONFD_VERSION=0.16.0
 
 # Install ssmtp
 RUN apt-get update \
-    && apt-get install -y ssmtp \
+    && apt-get install -y ssmtp mailutils \
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Install CONFD
