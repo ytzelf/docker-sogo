@@ -1,6 +1,7 @@
 FROM cschweingruber/sogo:latest
 
 ENV CONFD_VERSION=0.16.0
+ENV DISABLE_CRON=1
 
 # Install ssmtp
 RUN apt-get update \
