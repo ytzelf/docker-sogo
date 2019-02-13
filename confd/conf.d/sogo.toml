@@ -20,5 +20,6 @@ keys = [
     "SOGoMaximumPingInterval",
     "SOGoMaximumSyncInterval",
     "SOGoInternalSyncInterval",
-    "SOGoMemcachedHost"
+    "SOGoMemcachedHost",
+    "SOGoCacheCleanupInterval"
 ]
